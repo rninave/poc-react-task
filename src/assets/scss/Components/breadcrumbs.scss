@@ -1,0 +1,11 @@
+.home-breadcrumbs {
+    a {
+        color: $primary-color;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $body-color;
+        }
+    }
+}

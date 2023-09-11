@@ -1,0 +1,79 @@
+body {
+    font-family: $font-family !important;
+    color: $body-color;
+    background-color: $white;
+    height: 100vh;
+}
+
+// flex 
+.d-flex {
+    display: flex;
+}
+.align-items-center {
+    align-items: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-center {
+    justify-content: center;
+}
+
+// font color 
+.text-primary {
+    color: $primary-color !important;
+}
+.text-secondary {
+    color: $secondary-color !important;
+}
+.text-grey {
+    color: $grey;
+}
+
+// font weight 
+.font-weight-600 {
+    font-weight: $font-weight-semimedium !important;
+}
+.font-weight-700 {
+    font-weight: $font-weight-bold;
+}
+
+// font size 
+.font-20 {
+    font-size: $font-size-20;
+}
+
+// border 
+.border-bottom-grey-light {
+    border-bottom: $border-width-1 $border-solid $grey-light;
+}
+.border-grey-light {
+    border: $border-width-1 $border-solid $grey-light;
+}
+
+// padding 
+.pb-16 {
+    padding-bottom: $space16;
+}
+.p-16 {
+    padding: $space16;
+}
+
+
+// margin 
+.mb-24 {
+    margin-bottom: $space24;
+}
+.mb-12 {
+    margin-bottom: $space12;
+}
+
+// width 
+.w-50 {
+    width: 50%;
+}
+
+// border radius 
+.border-radius-4px {
+    border-radius: $border-radius-4px;
+}

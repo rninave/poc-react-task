@@ -5,45 +5,52 @@ $font-family: 'IBM Plex Sans', sans-serif;
 
 // font color
 
-$primary-color:        #0F62FE;
-$secondary-color:      #38476D;
-$body-color:           #101010;
-$grey:                 #636262;
+$primary-color:               #0F62FE;
+$secondary-color:             #38476D;
+$body-color:                  #101010;
+$grey:                        #636262;
+$white:                       #FFFFFF;
+$grey-light:                  #DBDADA;
 
 // Font size
 
-$fs-24: 24px;
-$fs-20: 20px;
-$fs-18: 18px;
-$fs-16: 16px;
-$fs-14: 14px;
-$fs-12: 12px;
+$font-size-32:                     32px;
+$font-size-24:                     24px;
+$font-size-20:                     20px;
+$font-size-18:                     18px;
+$font-size-16:                     16px;
+$font-size-14:                     14px;
+
+// Spacing
+
+$space4:                             4px;
+$space8:                             8px;
+$space12:                            12px;
+$space16:                           16px;
+$space24:                           24px;
+$space32:                           32px;
 
 
-// Font weight
+//Font weight
 
-$fw-bold: bold;
+$font-weight-normal:                400;
+$font-weight-medium:                500;
+$font-weight-semimedium:            600;
+$font-weight-bold:                  700;
 
-// space
-$space-100: 100px;
-$space-300: 300px;
-$space-64: 64px;
-$space-48: 48px;
-$space-24: 24px;
-$space-16: 16px;
-$space-12: 12px;
 
 // Border Radius 
-$border-radius-100px: 100px;
-$border-radius-8px: 8px;
+$border-radius-4px:                 4px;
 
-// Border Tyep
-$border-solid: solid; 
+// Border width 
 
-// Border Width
-$border-width-1: 1px; 
-$border-width-6: 6px; 
+$border-width-1:                  1px;
 
-// Media width 
-$max-width-767: 767px;
-$max-width-991: 991px;
+// Border type
+$border-solid:                     solid; 
+
+// breakpoint
+$xl-brekpoint:                    1199.98px;
+$lg-brekpoint:                    991.98px;
+$md-brekpoint:                    767.98px;
+$sm-brekpoint:                    575.98px;
