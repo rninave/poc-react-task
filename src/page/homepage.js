@@ -14,11 +14,15 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import Header from '../components/header'
 
 
 export default function Homepage() {
   return (
-    <Box>
+    <Box className="padding-top-80">
+     
+        <Header />
+       
       <Box sx={{ mb: 3 }}>
         <Container>
           <Breadcrumbs className="home-breadcrumbs" aria-label="breadcrumb">
@@ -118,39 +122,39 @@ export default function Homepage() {
             <Box className="font-weight-600 font-20" sx={{ mb: 2 }}>Detailed Description</Box>
             <Box className="border-grey-light p-16 w-50 border-radius-4px">
               <Box className="mb-12 d-flex align-items-center">
-              <Typography className="font-weight-600 w-50">
-                Modality
-              </Typography>
-              <p>: CT, MRI, RTSTRUCT</p>
+                <Typography className="font-weight-600 w-50">
+                  Modality
+                </Typography>
+                <p>: CT, MRI, RTSTRUCT</p>
               </Box>
               <Box className="mb-12 d-flex align-items-center">
-              <Typography className="font-weight-600 w-50">
-              No of Subjects
-              </Typography>
-              <p>: 4072</p>
+                <Typography className="font-weight-600 w-50">
+                  No of Subjects
+                </Typography>
+                <p>: 4072</p>
               </Box>
               <Box className="mb-12 d-flex align-items-center">
-              <Typography className="font-weight-600 w-50">
-              No of Studies
-              </Typography>
-              <p>: 4980</p>
+                <Typography className="font-weight-600 w-50">
+                  No of Studies
+                </Typography>
+                <p>: 4980</p>
               </Box>
               <Box className="mb-12 d-flex align-items-center">
-              <Typography className="font-weight-600 w-50">
-              No of Images
-              </Typography>
-              <p>: 7943</p>
+                <Typography className="font-weight-600 w-50">
+                  No of Images
+                </Typography>
+                <p>: 7943</p>
               </Box>
               <Box className="d-flex align-items-center">
-              <Typography className="font-weight-600 w-50">
-              Total Image Size
-              </Typography>
-              <p>: 470 GB</p>
+                <Typography className="font-weight-600 w-50">
+                  Total Image Size
+                </Typography>
+                <p>: 470 GB</p>
               </Box>
-             
+
             </Box>
           </Box>
-        
+
         </Container>
       </Box>
 
