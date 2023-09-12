@@ -1,0 +1,11 @@
+.card {
+    border: $border-width-1 $border-solid $grey-light;
+    padding: $space16;
+
+    &.sub-card {
+        .sub-card-img {
+            width: 100%;
+            height: 150px;
+        }
+    }
+}
