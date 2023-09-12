@@ -1,4 +1,5 @@
 // import React from "react";
+"use client"
 import * as React from 'react';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
@@ -15,6 +16,8 @@ import MenuItem from '@mui/material/MenuItem';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Header from '../components/header'
+import TabComp from '../components/TabComp'
+import MyTable from '@/components/MyTable';
 
 
 export default function Homepage() {
@@ -104,13 +107,14 @@ export default function Homepage() {
       <Box sx={{ width: '100%' }}>
         <Container>
           <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 3 }}>
-            <Tabs aria-label="basic tabs example">
+            {/* <Tabs aria-label="basic tabs example">
               <Tab label="Overview" />
               <Tab label="Guidelines" />
               <Tab label="Citation & data usage policy" />
               <Tab label="Acknowledgements" />
               <Tab label="Advisory board" />
-            </Tabs>
+            </Tabs> */}
+            <TabComp/>
           </Box>
 
           {/* Overview of collection  */}
@@ -158,6 +162,7 @@ export default function Homepage() {
         </Container>
       </Box>
 
+     <MyTable/>
 
     </Box>
   );
