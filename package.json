@@ -14,6 +14,8 @@
     "@mui/icons-material": "^5.14.8",
     "@mui/material": "^5.14.8",
     "@mui/styled-engine-sc": "^5.14.8",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "mui-image": "^1.0.7",
@@ -21,7 +23,8 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^5.3.11"
+    "styled-components": "^5.3.11",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
     "sass": "^1.66.1"
