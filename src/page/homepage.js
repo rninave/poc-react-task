@@ -16,8 +16,9 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Header from '../components/header';
-import BasicTabs from '../components/tabs';
+import Header from '../components/header'
+import TabComp from '../components/TabComp'
+import MyTable from '@/components/MyTable';
 import Cards from '../components/cards';
 
 
@@ -111,9 +112,10 @@ export default function Homepage() {
       {/* tab  */}
       <Box sx={{ width: '100%' }}>
         <Container>
+          <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 3 }}>
 
-
-          <BasicTabs />
+            <TabComp />
+          </Box>
 
           {/* Overview of collection  */}
           <Box index={0}>
@@ -161,6 +163,9 @@ export default function Homepage() {
 
       {/* card slider */}
       <Cards />
+
+      <MyTable />
+
 
     </Box>
     </>
