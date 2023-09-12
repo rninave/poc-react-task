@@ -61,6 +61,10 @@ body {
 .padding-top-80 {
     padding-top: $space80;
 }
+.px-0{
+    padding-left: 0;
+    padding-right: 0;
+}
 
 
 // margin 
@@ -70,7 +74,16 @@ body {
 .mb-12 {
     margin-bottom: $space12;
 }
-
+.ml-60{
+    margin-left: $space60;
+}
+.ml-auto{
+    margin-left: auto;
+}
+.mx-32{
+    margin-left: $space32;
+    margin-right:$space32;
+}
 // width 
 .w-50 {
     width: 50%;

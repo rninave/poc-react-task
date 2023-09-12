@@ -1,4 +1,5 @@
 // import React from "react";
+"use client";
 import * as React from 'react';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
@@ -19,10 +20,10 @@ import Header from '../components/header'
 
 export default function Homepage() {
   return (
+    <>
+      <Header />
     <Box className="padding-top-80">
-     
-        <Header />
-       
+      
       <Box sx={{ mb: 3 }}>
         <Container>
           <Breadcrumbs className="home-breadcrumbs" aria-label="breadcrumb">
@@ -44,7 +45,7 @@ export default function Homepage() {
 
       <Box sx={{ mb: 3 }}>
         <Container>
-          <Grid container spacing={2} className="border-bottom-grey-light pb-16">
+          <Grid container spacing={2} className="border-bottom-grey-light pb-16 d-flex justify-content-between">
             <Grid xs={8}>
               <Box className="h1" sx={{ fontWeight: '400', mb: 3 }}>Pulmonary Tuberculosis</Box>
               <Box sx={{ display: 'flex' }}>
@@ -160,6 +161,7 @@ export default function Homepage() {
 
 
     </Box>
+    </>
   );
 }
 
