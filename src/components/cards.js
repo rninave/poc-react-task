@@ -9,17 +9,24 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Unstable_Grid2';
+import Link from '@mui/material/Link';
 
 // images 
 import Card_img_1 from '../assets/images/card-img-1.png';
 import Copy from '../assets/images/copy-icon.svg';
+import Download_Blue from '../assets/images/download-blue.svg';
 
 
 export default function Cards() {
   return (
     <Box className="mb-24">
-      <Container>
-        <Grid container spacing={2} className="border-bottom-grey-light pb-16">
+      <Box className="d-md-flex align-items-center justify-content-between mb-16">
+       <Box className="font-weight-600 font-20 mb-md-16">Overview of collection</Box>
+       <Link href="#" className="d-flex align-items-center text-decoration-none btn btn-primary-link border-0">Download Sample
+        <Image className="ml-8" src={Download_Blue} />
+       </Link>
+      </Box>
+        <Grid container spacing={2}>
           <Grid xs={4}>
             <Card className='card sub-card' sx={{ maxWidth: 345 }}>
               <CardMedia className='mb-16'>
@@ -34,7 +41,7 @@ export default function Cards() {
                 </Typography>
               </CardContent>
               <CardActions className='p-0'>
-                <Button className='p-0' size="small">Open DICOM link
+                <Button className='p-0 btn btn-primary-link font-14 border-0' size="small">Open DICOM link
                   <Image className='ml-8' src={Copy} />
                 </Button>
               </CardActions>
@@ -81,8 +88,6 @@ export default function Cards() {
             </Card>
           </Grid>
         </Grid>
-
-      </Container>
     </Box>
 
   );

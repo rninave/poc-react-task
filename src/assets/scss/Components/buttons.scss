@@ -1,0 +1,27 @@
+.btn {
+    border-radius: $border-radius-4px;
+    font-size: $font-size-14;
+    padding: $space10 $space16;
+
+    &.btn-primary {
+        background-color: $secondary-color;
+        color: $white;
+
+        &:hover {
+            background-color: $secondary-dark;
+        }
+    }
+    &.btn-primary-link {
+       padding: 0;
+       font-size: $space16;
+       color: $primary-color;
+       border-bottom: $border-width-1 $border-solid $primary-color;
+       border-radius: 0;
+       background-color: transparent;
+
+        &:hover {
+            color: $primary-dark;
+            border-bottom: $border-width-1 $border-solid $primary-dark;
+        }
+    }
+}

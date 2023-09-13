@@ -1,0 +1,12 @@
+.pulmonary-tuberculosis-option {
+    @media only screen and (max-width: $md-brekpoint) {
+        flex-wrap: wrap;
+    }
+
+    .option {
+        @media only screen and (max-width: $md-brekpoint) {
+            margin-bottom: $space8;
+        }
+    
+    }
+}

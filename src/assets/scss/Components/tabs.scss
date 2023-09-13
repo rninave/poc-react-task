@@ -1,0 +1,26 @@
+.home-tabs {
+    .MuiTabs-flexContainer {
+        overflow-x: auto;
+        border-bottom: $border-width-2 $border-solid $grey-light;
+
+        .Mui-selected {
+            color: $body-color;
+            font-weight: $font-weight-semimedium;
+        }
+        .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+            &:hover {
+                color: $body-color;
+            }
+        }
+    }
+    .MuiBox-root {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .detailed-description {
+        @media only screen and (max-width: $md-brekpoint) {
+            width: 100% !important;
+        }
+    }
+}
+

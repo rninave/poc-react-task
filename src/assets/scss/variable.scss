@@ -6,7 +6,10 @@ $font-family: 'IBM Plex Sans', sans-serif;
 // font color
 
 $primary-color:               #0F62FE;
+$primary-dark:                #014cd9;
+$primary-light:               #F5F8FF;
 $secondary-color:             #38476D;
+$secondary-dark:              #27314b;
 $body-color:                  #101010;
 $grey:                        #636262;
 $white:                       #FFFFFF;
@@ -25,6 +28,7 @@ $font-size-14:                     14px;
 
 $space4:                             4px;
 $space8:                             8px;
+$space10:                             10px;
 $space12:                            12px;
 $space16:                           16px;
 $space24:                           24px;
@@ -47,6 +51,7 @@ $border-radius-4px:                 4px;
 // Border width 
 
 $border-width-1:                  1px;
+$border-width-2:                  2px;
 
 // Border type
 $border-solid:                     solid; 
