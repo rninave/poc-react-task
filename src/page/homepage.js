@@ -16,19 +16,20 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Header from '../components/header'
-import TabComp from '../components/TabComp'
+import TabComp from '../components/TabComp';
 import MyTable from '@/components/MyTable';
 import Cards from '../components/cards';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import Carousel from '@/components/Carousel';
+import Header from '@/components/header';
 
 
 
 export default function Homepage() {
   return (
+    <>
+    <Header/>
     <Box className="padding-top-80">
-
-      <Header />
-
       <Box sx={{ mb: 3 }}>
         <Container>
           <Breadcrumbs className="home-breadcrumbs" aria-label="breadcrumb">
@@ -97,6 +98,7 @@ export default function Homepage() {
                     // value={age}
                     label="Age"
                   // onChange={handleChange}
+                  IconComponent={KeyboardArrowDownIcon}
                   >
                     <MenuItem value={10}>Ten</MenuItem>
                     <MenuItem value={20}>Twenty</MenuItem>
@@ -163,11 +165,12 @@ export default function Homepage() {
 
       {/* card slider */}
       <Cards />
-
+        <Carousel/>
       <MyTable />
 
 
     </Box>
+    </>
   );
 }
 
