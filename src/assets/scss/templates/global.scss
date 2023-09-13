@@ -48,6 +48,9 @@ body {
 .text-grey {
     color: $grey;
 }
+.text-body-color {
+    color: $body-color !important;
+}
 
 // font weight 
 .font-weight-600 {
@@ -112,6 +115,9 @@ body {
 // margin 
 .mb-24 {
     margin-bottom: $space24;
+}
+.mb-32 {
+    margin-bottom: $space32;
 }
 .mb-12 {
     margin-bottom: $space12;

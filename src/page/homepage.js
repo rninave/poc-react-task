@@ -28,15 +28,15 @@ import HomeBreadcrumbs from '../components/breadcrumbs';
 export default function Homepage() {
   return (
     <>
-      <Box className="padding-top-80">
+      <Box>
       <Header />
     
         <HomeBreadcrumbs />
-      
+
         <Box sx={{ mb: 3 }}>
           <Container>
-            <Grid container spacing={2} className="border-bottom-grey-light pb-16">
-              <Grid lg={8}>
+            <Grid container spacing={2} className="border-bottom-grey-light pb-16 d-md-flex justify-content-between pulmonary-content">
+              <Grid sx={8}>
                 <Box className="h1" sx={{ fontWeight: '400', mb: 3 }}>Pulmonary Tuberculosis</Box>
                 <Box className="pulmonary-tuberculosis-option" sx={{ display: 'flex' }}>
                   <Box className="option" sx={{ display: 'flex' }}>
@@ -72,20 +72,21 @@ export default function Homepage() {
                 </Box>
 
               </Grid>
-              <Grid lg={2}>
-                <Box sx={{ minWidth: 120 }}>
+              <Grid sx={2}>
+                <Box sx={{ minWidth: 162, height: 48 }}>
                   <FormControl fullWidth>
-                    <InputLabel id="demo-simple-select-autowidth-label">Age</InputLabel>
+                    <InputLabel className="text-body-color" id="demo-simple-select-autowidth-label">Step</InputLabel>
                     <Select
                       labelId="demo-simple-select-label"
                       id="demo-simple-select"
                       // value={age}
                       label="Age"
                     // onChange={handleChange}
+                      IconComponent={KeyboardArrowDownIcon}
                     >
-                      <MenuItem value={10}>Ten</MenuItem>
-                      <MenuItem value={20}>Twenty</MenuItem>
-                      <MenuItem value={30}>Thirty</MenuItem>
+                      <MenuItem className="text-body-color" value={10}>Version 1</MenuItem>
+                      <MenuItem className="text-body-color" value={20}>Version 2</MenuItem>
+                      <MenuItem className="text-body-color" value={30}>Version 3</MenuItem>
                     </Select>
                   </FormControl>
                 </Box>

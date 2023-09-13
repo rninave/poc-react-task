@@ -20,7 +20,7 @@ export default function HomeBreadcrumbs() {
                     <Link underline="none" href="#">
                         Tuberculosis data collections
                     </Link>
-                    <Link underline="none" href="#">
+                    <Link className="text-body-color" underline="none" href="#">
                         Pulmonary Tuberculosis
                     </Link>
                 </Breadcrumbs>

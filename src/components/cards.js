@@ -27,7 +27,7 @@ export default function Cards() {
        </Link>
       </Box>
         <Grid container spacing={2}>
-          <Grid xs={4}>
+          <Grid md={4} sm={6} xs={12}>
             <Card className='card sub-card' sx={{ maxWidth: 345 }}>
               <CardMedia className='mb-16'>
                 <Image className='sub-card-img' src={Card_img_1} />
@@ -47,7 +47,7 @@ export default function Cards() {
               </CardActions>
             </Card>
           </Grid>
-          <Grid xs={4}>
+          <Grid  md={4} sm={6} xs={12}>
             <Card className='card sub-card' sx={{ maxWidth: 345 }}>
               <CardMedia className='mb-16'>
                 <Image className='sub-card-img' src={Card_img_1} />
@@ -67,7 +67,7 @@ export default function Cards() {
               </CardActions>
             </Card>
           </Grid>
-          <Grid xs={4}>
+          <Grid  md={4} sm={6} xs={12}>
             <Card className='card sub-card' sx={{ maxWidth: 345 }}>
               <CardMedia className='mb-16'>
                 <Image className='sub-card-img' src={Card_img_1} />

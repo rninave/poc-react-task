@@ -40,7 +40,7 @@ function header() {
   };
 
   return (
-    <AppBar position="static"  className='bg-white'>
+    <AppBar position="static"  className='bg-white mb-32'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
