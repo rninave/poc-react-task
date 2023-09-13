@@ -16,10 +16,10 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Header from '../components/header'
-import TabComp from '../components/TabComp'
-
-
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import Carousel from '@/components/Carousel';
+import Header from '@/components/header';
+import TabComp from '../components/TabComp';
 import HomeBreadcrumbs from '../components/breadcrumbs';
 
 
@@ -28,9 +28,9 @@ import HomeBreadcrumbs from '../components/breadcrumbs';
 export default function Homepage() {
   return (
     <>
-      <Header />
       <Box className="padding-top-80">
-
+      <Header />
+    
         <HomeBreadcrumbs />
       
         <Box sx={{ mb: 3 }}>
@@ -98,17 +98,17 @@ export default function Homepage() {
         <Box sx={{ width: '100%' }}>
           <Container>
             <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 3 }}>
+              {/* Tabs  */}
               <TabComp />
-              
-
-              
-
-            
             </Box>
           </Container>
         </Box>
 
-      </Box>
+      
+
+      {/* Carousel slider */}
+        {/* <Carousel/> */}
+        </Box>
     </>
   );
 }

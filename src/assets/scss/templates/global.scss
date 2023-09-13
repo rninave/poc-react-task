@@ -9,6 +9,9 @@ body {
     text-decoration: none;
 }
 
+.bg-white{
+    background-color: $white;
+}
 // flex 
 .d-flex {
     display: flex;
@@ -92,7 +95,7 @@ body {
     padding-bottom: $space16;
 }
 .p-16 {
-    padding: $space16;
+    padding: $space16 !important;
 }
 .padding-top-80 {
     padding-top: $space80;
