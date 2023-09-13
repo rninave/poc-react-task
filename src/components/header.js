@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Poclogo from "../assets/images/poc.png";
 import HelpIcon from "../assets/images/help.svg";
-import Notification from "../assets/images/notification.svg";
+import Notification from "../assets/images/notify.svg";
 import UserImg from "../assets/images/user-img.svg";
 import Image from 'next/image';
 
@@ -129,7 +129,7 @@ function header() {
 
           <Box  className="ml-auto d-flex align-items-center">
           <Image src={HelpIcon} alt="helphicon" />
-          <Image src={Notification} alt="notification" className="mx-32"/>
+          <Image src={Notification} alt="notification"/>
           </Box>
           <Box sx={{ flexGrow: 0 }}>
           

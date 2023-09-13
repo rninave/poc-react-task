@@ -1,5 +1,5 @@
 // import React from "react";
-"use client"
+"use client";
 import * as React from 'react';
 import Image from 'next/image';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
@@ -51,7 +51,7 @@ export default function Homepage() {
 
       <Box sx={{ mb: 3 }}>
         <Container>
-          <Grid container spacing={2} className="border-bottom-grey-light pb-16">
+          <Grid container spacing={2} className="border-bottom-grey-light pb-16 d-flex justify-content-between">
             <Grid xs={8}>
               <Box className="h1" sx={{ fontWeight: '400', mb: 3 }}>Pulmonary Tuberculosis</Box>
               <Box sx={{ display: 'flex' }}>

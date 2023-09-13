@@ -66,6 +66,10 @@ body {
 .padding-top-80 {
     padding-top: $space80;
 }
+.px-0{
+    padding-left: 0;
+    padding-right: 0;
+}
 .p-0 {
     padding: 0 !important;
 }
@@ -77,6 +81,16 @@ body {
 }
 .mb-12 {
     margin-bottom: $space12;
+}
+.ml-60{
+    margin-left: $space60;
+}
+.ml-auto{
+    margin-left: auto;
+}
+.mx-32{
+    margin-left: $space32;
+    margin-right:$space32;
 }
 .ml-8 {
     margin-left: $space8;
