@@ -21,16 +21,23 @@ import Carousel from '@/components/Carousel';
 import Header from '@/components/header';
 import TabComp from '../components/TabComp';
 import HomeBreadcrumbs from '../components/breadcrumbs';
+import { DisabledByDefault } from '@mui/icons-material';
+
 
 
 
 
 export default function Homepage() {
+  const [age, setAge] = React.useState('');
+
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
   return (
     <>
       <Box>
-      <Header />
-    
+        <Header />
+
         <HomeBreadcrumbs />
 
         <Box sx={{ mb: 3 }}>
@@ -74,19 +81,20 @@ export default function Homepage() {
               </Grid>
               <Grid sx={2}>
                 <Box sx={{ minWidth: 162, height: 48 }}>
-                  <FormControl fullWidth>
-                    <InputLabel className="text-body-color" id="demo-simple-select-autowidth-label">Step</InputLabel>
+                  <FormControl sx={{ minWidth: 162, height: 48 }}>
                     <Select
-                      labelId="demo-simple-select-label"
-                      id="demo-simple-select"
-                      // value={age}
-                      label="Age"
-                    // onChange={handleChange}
+                      value={age}
+                      onChange={handleChange}
+                      displayEmpty
+                      inputProps={{ 'aria-label': 'Without label' }}
                       IconComponent={KeyboardArrowDownIcon}
                     >
-                      <MenuItem className="text-body-color" value={10}>Version 1</MenuItem>
-                      <MenuItem className="text-body-color" value={20}>Version 2</MenuItem>
-                      <MenuItem className="text-body-color" value={30}>Version 3</MenuItem>
+                      <MenuItem value="">
+                        <em>None</em>
+                      </MenuItem>
+                      <MenuItem className="text-body-color" value={10}>Ten</MenuItem>
+                      <MenuItem className="text-body-color" value={20}>Twenty</MenuItem>
+                      <MenuItem className="text-body-color" value={30}>Thirty</MenuItem>
                     </Select>
                   </FormControl>
                 </Box>
@@ -105,11 +113,12 @@ export default function Homepage() {
           </Container>
         </Box>
 
-      
+        <container>
+          <Carousel />
 
-      {/* Carousel slider */}
-        {/* <Carousel/> */}
-        </Box>
+        </container>
+        {/* Carousel slider */}
+      </Box>
     </>
   );
 }

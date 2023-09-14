@@ -1,9 +1,29 @@
+.sub-carousel {
+    .css-bhp9pd-MuiPaper-root-MuiCard-root {
+        margin: 0 12px;
+    }
+    .slick-slider {
+        margin: 0 24px;
 
-.carousel-container {
-    width: 900px; 
-    margin: 0 auto; 
-    @media screen and (max-width:767px) {
-        width: 100%;
-        padding: 0 15px;
+        @media only screen and (max-width: $md-brekpoint) {
+           margin: 0;
+        }
+
+        .slick-arrow {
+            color: black !important;
+        }
+
+        .slick-next {
+            @media only screen and (max-width: $md-brekpoint) {
+                display: none !important;
+            }
+        }
+        .slick-prev {
+            @media only screen and (max-width: $md-brekpoint) {
+                display: none !important;
+            }
+        }
+      
     }
 }
+
