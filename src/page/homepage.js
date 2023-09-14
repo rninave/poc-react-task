@@ -17,7 +17,6 @@ import MenuItem from '@mui/material/MenuItem';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import Carousel from '@/components/Carousel';
 import Header from '@/components/header';
 import TabComp from '../components/TabComp';
 import HomeBreadcrumbs from '../components/breadcrumbs';
@@ -113,11 +112,6 @@ export default function Homepage() {
           </Container>
         </Box>
 
-        <container>
-          <Carousel />
-
-        </container>
-        {/* Carousel slider */}
       </Box>
     </>
   );

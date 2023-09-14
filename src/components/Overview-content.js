@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Cards from '../components/cards';
 import { Button } from '@mui/material';
 import MyTable from '@/components/MyTable';
+import Carousel from '@/components/Carousel';
 
 
 function Overview() {
@@ -50,7 +51,10 @@ function Overview() {
       </Box>
 
       {/* card  */}
-      <Cards />
+      {/* <Cards /> */}
+
+         {/* Carousel slider */}
+         <Carousel />
 
       {/* Request access  */}
       <Box className="d-md-flex align-items-center justify-content-between border-grey-light p-16 border-radius-4px mb-16">
