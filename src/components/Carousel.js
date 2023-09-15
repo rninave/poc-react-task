@@ -6,12 +6,10 @@ import { Card, CardContent, Typography, CardActions, Button, Grid, Box, CardMedi
 import Image from 'next/image';
 import Card_img_1 from '../assets/images/card-img-1.png';
 import Copy from '../assets/images/copy-icon.svg';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
-
 import Download_Blue from '../assets/images/download-blue.svg';
+import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 
 
 function Carousel() {
@@ -20,8 +18,7 @@ function Carousel() {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        prevArrow: <ArrowBackIcon />,
-        nextArrow: <ArrowForwardIcon />,
+        nextArrow: <ArrowForwardIosRoundedIcon/>,
         slidesToScroll: 1,
         responsive: [
             {
@@ -72,37 +69,38 @@ function Carousel() {
     ];
 
     return (
-
-        <Container>
+        <>
             <Box className="d-md-flex align-items-center justify-content-between mb-16">
                 <Box className="font-weight-600 font-20 mb-md-16">Overview of collection</Box>
                 <Link href="#" className="d-flex align-items-center text-decoration-none btn btn-primary-link border-0">Download Sample
                     <Image className="ml-8" src={Download_Blue} />
                 </Link>
             </Box>
-            <Box sx={{ mb: 4 }} className="sub-carousel">
-                <Slider {...settings} >
-                    {carouselData.map((item, index) => (
-                        <Grid item xs={12} sm={6} md={4} key={index} >
-                            <Card className="card sub-card " >
-                                <CardMedia className='mb-16'>
-                                    <Image className='sub-card-img' src={item.image} alt={item.title} />
-                                </CardMedia>
-                                <CardContent className='p-0 mb-8'>
-                                    <Typography variant="font-14" >{item.title}</Typography>
-                                    <Typography variant="font-14">{item.description}</Typography>
-                                </CardContent>
-                                <CardActions className='p-0'>
-                                    <Button className='p-0' size="small">Open DICOM link
-                                        <Image className='ml-8' src={Copy} />
-                                    </Button>
-                                </CardActions>
-                            </Card>
-                        </Grid>
-                    ))}
-                </Slider>
-            </Box>
-        </Container>
+            <Container>
+                <Box sx={{ mb: 4 }} className="sub-carousel">
+                    <Slider {...settings} >
+                        {carouselData.map((item, index) => (
+                            <Grid item xs={12} sm={6} md={4} key={index} >
+                                <Card className="card sub-card " >
+                                    <CardMedia className='mb-16'>
+                                        <Image className='sub-card-img' src={item.image} alt={item.title} />
+                                    </CardMedia>
+                                    <CardContent className='p-0 mb-8'>
+                                        <Typography variant="font-14" >{item.title}</Typography>
+                                        <Typography variant="font-14">{item.description}</Typography>
+                                    </CardContent>
+                                    <CardActions className='p-0'>
+                                        <Button className='p-0' size="small">Open DICOM link
+                                            <Image className='ml-8' src={Copy} />
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                            </Grid>
+                        ))}
+                    </Slider>
+                </Box>
+            </Container>
+        </>
     );
 }
 
