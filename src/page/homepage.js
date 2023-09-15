@@ -88,12 +88,11 @@ export default function Homepage() {
                       inputProps={{ 'aria-label': 'Without label' }}
                       IconComponent={KeyboardArrowDownIcon}
                     >
-                      <MenuItem value="">
-                        <em>None</em>
+                      <MenuItem className="text-body-color" value="">
+                        Version 1
                       </MenuItem>
-                      <MenuItem className="text-body-color" value={10}>Ten</MenuItem>
-                      <MenuItem className="text-body-color" value={20}>Twenty</MenuItem>
-                      <MenuItem className="text-body-color" value={30}>Thirty</MenuItem>
+                      <MenuItem className="text-body-color" value={20}>Version 2</MenuItem>
+                      <MenuItem className="text-body-color" value={30}>Version 3</MenuItem>
                     </Select>
                   </FormControl>
                 </Box>

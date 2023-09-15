@@ -6,7 +6,7 @@ import { Button } from '@mui/material';
 
 
 
-function Guidelines() {
+function AdvisoryBoard() {
   return (
     <Box index={0}>
     {/* Overview of collection  */}
@@ -63,4 +63,4 @@ function Guidelines() {
   </Box>
   );
 }
-export default Guidelines;
+export default AdvisoryBoard;

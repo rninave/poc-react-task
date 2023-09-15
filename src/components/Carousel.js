@@ -71,7 +71,7 @@ function Carousel() {
     return (
 
         <Container>
-                <Box sx={{ mb: 4 }} className="sub-carousel">
+            <Box sx={{ mb: 4 }} className="sub-carousel">
                 <Slider {...settings} >
                     {carouselData.map((item, index) => (
                         <Grid item xs={12} sm={6} md={4} key={index} >
@@ -92,8 +92,8 @@ function Carousel() {
                         </Grid>
                     ))}
                 </Slider>
-        </Box>
-            </Container>
+            </Box>
+        </Container>
     );
 }
 
