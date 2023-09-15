@@ -2,23 +2,37 @@
     .css-bhp9pd-MuiPaper-root-MuiCard-root {
         margin: 0 12px;
     }
+
     .slick-slider {
 
         .slick-arrow {
-            color: black !important;
-        }
+            color: $grey !important;
+            background: $white;
+            border-radius: 100px;
+            position: absolute;
+            width: 60px;
+            padding: 16px;
+            height: 60px;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            box-shadow: $box-shadow;
 
-        .slick-next {
-            @media only screen and (max-width: $md-brekpoint) {
-                display: none !important;
+            &:hover {
+                padding: 14px;
             }
+
+            @media only screen and (max-width: $md-brekpoint) {
+                width: 40px;
+                height: 40px;
+                padding: 10px;
+                right: 0;
+            }
+
         }
         .slick-prev {
-            @media only screen and (max-width: $md-brekpoint) {
-                display: none !important;
-            }
+            display: none !important;
         }
-      
+
     }
 }
-

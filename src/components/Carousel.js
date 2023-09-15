@@ -76,7 +76,7 @@ function Carousel() {
                     <Image className="ml-8" src={Download_Blue} />
                 </Link>
             </Box>
-            <Container>
+            
                 <Box sx={{ mb: 4 }} className="sub-carousel">
                     <Slider {...settings} >
                         {carouselData.map((item, index) => (
@@ -99,7 +99,7 @@ function Carousel() {
                         ))}
                     </Slider>
                 </Box>
-            </Container>
+           
         </>
     );
 }
