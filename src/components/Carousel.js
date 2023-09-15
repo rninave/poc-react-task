@@ -9,6 +9,9 @@ import Copy from '../assets/images/copy-icon.svg';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Container from '@mui/material/Container';
+import Link from '@mui/material/Link';
+
+import Download_Blue from '../assets/images/download-blue.svg';
 
 
 function Carousel() {
@@ -71,6 +74,12 @@ function Carousel() {
     return (
 
         <Container>
+            <Box className="d-md-flex align-items-center justify-content-between mb-16">
+                <Box className="font-weight-600 font-20 mb-md-16">Overview of collection</Box>
+                <Link href="#" className="d-flex align-items-center text-decoration-none btn btn-primary-link border-0">Download Sample
+                    <Image className="ml-8" src={Download_Blue} />
+                </Link>
+            </Box>
             <Box sx={{ mb: 4 }} className="sub-carousel">
                 <Slider {...settings} >
                     {carouselData.map((item, index) => (
